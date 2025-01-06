@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BLE Data Receiver</title>
+    <style>
+        #data {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button id="scanButton">Scan for Devices</button>
+    <br></br>
+    <div id="data1"></div>
+    <div>Write Value</div>
+    <input type="text" id="input-value" placeholder="SG..."></input>
+    <button id="sendButton">Send</button>
+    <div>S310K</div>
+    <div>S320K</div>
+    <div id="data"></div>
+    <div id="receivedDataContainer"></div>
+    <button id="testButton"> 模拟接受数据并计算步频率</button>
+
+    <script src="BLE-test2.js" type=module></script>
+</body>
+</html>
+

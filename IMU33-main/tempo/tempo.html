@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempo Slider with Finger Snap</title>
+  <link rel="stylesheet" href="tempo.css">
+</head>
+<body>
+  <div class="tempo-container">
+    <h1>Adjust the tempo and click "Start Tempo":</h1>
+    <input type="range" min="40" max="200" value="120" class="tempo-slider" id="tempoSlider">
+    <label for="tempoSlider">Tempo: <span id="tempoValue">120</span> BPM</label>
+    <button id="startButton" onclick="startTempo()">Start Tempo</button>
+    <button id="stopButton" onclick="stopTempo()" style="display: none;">Stop Tempo</button>
+  </div>
+  <audio id="audio" src="../asset/metronome-tempo-single-sound_G_major.wav"></audio>
+  <script src="tempo.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.login-form {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-form h2 {
+    text-align: center;
+  }
+  
+  .login-form input[type="text"],
+  .login-form input[type="password"],
+  .login-form button {
+    display: block;
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    background-color: #432C81;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #432C81;
+  }
+
+  .register{
+    text-decoration:underline;
+    cursor:pointer;
+    color: 432C81;
+    text-align: center;
+    font-size:400 18px ;
+
+  }

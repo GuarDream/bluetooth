@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLE Data Receiver</title>
+    <link rel="stylesheet" href="BLE.css">
+    <style>
+        #data {
+            margin-top: 20px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/dspjs@1.0.0/dsp.min.js"></script>
+</head>
+<body>
+    <button id="scanButton">扫描设备</button>
+    <br></br>
+    <div id="date"></div>
+    <!--后期改为输入用户名以及验证信息-->
+
+
+    <label for="inputField">请输入文件名称:</label>
+    <br/>
+    <input type="text" id="inputField">
+    <button id="saveFileName">保存</button>
+    <br></br>
+    <div id="output"></div>
+    <div id="data2"></div>
+
+    <!--<input type="text" id="input-value" placeholder="SG..."></input>-->
+
+    <!--<button id="sendButton">Send</button>-->
+    
+
+    <button id="startSampling">采样开始</button>
+    <button id="endSampling">采样结束</button>
+    <button id="sendData">数据发送</button>
+    <div>S310K</div>
+    <div>S320K</div>
+    <div id="data"></div>
+    <div id="receivedDataContainer"></div>
+    <button id="testButton"> 模拟接受数据并计算步频率</button>
+ 
+    <script src="./dsp.js"></script>
+    
+    <script src="BLE-test4.js" type=module></script>
+    <script src="Gait.js" type=module></script>
+    
+    <!--<script src="GaitParameter.js" type=module></script>-->
+</body>
+</html>

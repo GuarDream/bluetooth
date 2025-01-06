@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="Login.css">
+<title>Login Page</title>
+<style>
+/* 登录表单样式 */
+
+</style>
+</head>
+<body>
+
+<div class="login-form">
+  <h2>登入</h2>
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="用户名" required>
+    <input type="password" id="password" placeholder="密码" required>
+    <button type="submit">确认</button>
+    <div class="register" id="register">注册</div>
+  </form>
+</div>
+
+<script>
+// 模拟用户登录
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // 阻止表单默认提交行为
+
+  // 这里可以进行用户名密码验证
+  // 这里只是简单地模拟登录成功
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+
+  if (username !== "" && password !== "") {
+    localStorage.setItem('username',username);
+    localStorage.setItem('password',password);
+    alert("登录成功！欢迎您，" + username + "！");
+    window.location.href = "../../test1.html"; // 登录成功后跳转回首页
+  } else {
+    alert("登录失败，请输入有效的用户名和密码。");
+  }
+});
+</script>
+
+</body>
+</html>
